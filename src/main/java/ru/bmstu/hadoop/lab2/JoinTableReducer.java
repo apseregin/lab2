@@ -22,11 +22,13 @@ public class JoinTableReducer extends Reducer<CompositeKeyComparable, Text, Text
             if (delay > max) {
                 max = delay;
             }
-            sum += 
+            sum += delay;
+            n++;
         }
 
         if (n != 0) {
-
+            String value = "min = " + min + ", max = " + max + ", average = " + sum/n;
+            ctx.write()
         }
     }
 }
