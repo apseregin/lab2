@@ -15,7 +15,7 @@ public class JoinTableReducer extends Reducer<CompositeKeyComparable, Text, Text
         String airportName = iter.next().toString();
         int min = Integer.MAX_VALUE, average = 0, max = 0, n = 0;
         while (iter.hasNext()) {
-
+            
         }
 
         if (n != 0) {
